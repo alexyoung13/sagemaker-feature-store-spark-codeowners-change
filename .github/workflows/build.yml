@@ -80,7 +80,7 @@ jobs:
           cp -R pyspark-sdk/dist processedArtifacts
 
       # Upload processed artifacts to be used for running the integration tests in subsequent integration tests workflow
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: processedArtifacts
           path: processedArtifacts/
